@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Class Changer Plugin</title>
+    <meta name="viewport" content="width=device-width">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script src="jquery.classChanger.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('body').classChanger({
+                buttonText: '0',
+                levels: 20
+            });
+            //$('body').classChanger('setActive', 3);
+        });
+    </script>
+
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet" />
+
+    <style>
+        body.classChangerTarget1 { background: #ccc; }
+        body.classChangerTarget2 { background: #ff0; }
+        body.classChangerTarget3 { background: #00f; }
+        body.classChangerTarget4 { background: #f0f; }
+
+        a.classChangerBtn {
+            display: inline-block;
+            margin: 0 .4em;
+            padding: .3em;
+            border: 1px solid #ccc;
+            background: #eee;
+        }
+        .classChangerBtn_active { font-weight: bold; font-size: 1.6em; }
+    </style>
+
+</head>
+<body>
+    <div class="canvas">
+        <h2>jQuery Class Changer (jquery.classChanger.js)</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget tortor sit amet lacus feugiat vehicula. Fusce mi ante, euismod aliquam dapibus non, mollis id ante. Cras gravida imperdiet nisi, ut ultricies metus adipiscing eu. Curabitur vel odio mi. Nam quis leo erat, vitae fermentum arcu. Praesent velit enim, pretium et faucibus dapibus, vehicula eget quam. Ut eget leo non quam tristique vulputate vitae vulputate felis. Donec in nisl non erat accumsan suscipit eu et tortor. Vivamus id turpis sit amet magna aliquet mattis. Praesent tincidunt enim ac lectus convallis sit amet convallis ante lobortis. Nunc eget elit in ante congue accumsan eget non lorem. Vivamus vel nunc odio. Donec nulla justo, rhoncus a tincidunt ultricies, tincidunt non enim. Curabitur a sapien arcu. Nam a felis et est posuere mollis sit amet vitae lorem.
+        </p>
+        <p>
+            In eget consequat diam. Quisque ultrices accumsan lobortis. Sed lacus lorem, ultrices id scelerisque at, mattis id ligula. In congue auctor odio eget tempus. Sed vehicula vestibulum porttitor. Nunc porttitor augue a erat varius ultrices non sed arcu. Etiam imperdiet, lacus id bibendum aliquet, ligula nunc venenatis mauris, ut faucibus quam tortor quis dui. Maecenas vel ultricies turpis. Aenean non porta ante. Praesent elementum ipsum a arcu sollicitudin ut tristique orci vestibulum. Proin consectetur orci sed sem elementum facilisis.
+        </p>
+        <p>
+            Nam a neque in neque imperdiet iaculis at id sem. Nullam lacinia purus a ipsum faucibus ut malesuada ante egestas. Etiam in tortor mauris. Suspendisse gravida, purus sed lobortis pellentesque, lectus elit accumsan lectus, ac mattis augue purus ac neque. Nulla ultricies pellentesque odio nec sodales. Quisque risus ante, sagittis in malesuada elementum, posuere a ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+    </div>
+
+    <div id="slider"></div>
+</body>
+</html>
